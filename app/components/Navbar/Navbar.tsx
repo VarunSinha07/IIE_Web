@@ -16,10 +16,13 @@ interface NavigationItem {
 
 const navigation: NavigationItem[] = [
     { name: 'About Us', href: '#aboutus-section', current: false },
-    { name: 'Services', href: '#services-section', current: false },
-    { name: 'FAQ', href: '#faq-section', current: false },
-    { name: 'Blog', href: '#blog-section', current: false },
-    { name: 'Testimonial', href: '#testimonial-section', current: false },
+    { name: 'Programs', href: '#services-section', current: false },
+    { name: 'Facilities', href: '#faq-section', current: false },
+    { name: 'Mentors', href: '#blog-section', current: false },
+    { name: 'IIC Events', href: '#testimonial-section', current: false },
+    { name: 'Insights', href: '#blog-section', current: false },
+    { name: 'Apply Now ', href: '#testimonial-section', current: false },
+    { name: 'Contact Us', href: '#testimonial-section', current: false },
 ]
 
 function classNames(...classes: string[]) {
@@ -42,7 +45,7 @@ const Navbar = () => {
                                 <Image
                                     src="/images/navbar/IIELOGO.png"
                                     alt="IIE Logo"
-                                    width={136} // Adjust width as needed
+                                    width={130} // Adjust width as needed
                                     height={104} // Adjust height as needed
                                     className="h-8 sm:h-16"
                                 />
@@ -67,7 +70,7 @@ const Navbar = () => {
                                             href={item.href}
                                             className={classNames(
                                                 item.current ? 'bg-gray-900' : 'navlinks hover:text-black',
-                                                'px-3 py-4 rounded-md text-lg font-normal'
+                                                'px-3 py-4 rounded-md text-s font-normal'
                                             )}
                                             aria-current={item.href ? 'page' : undefined}
                                         >

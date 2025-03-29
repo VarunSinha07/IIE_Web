@@ -11,22 +11,22 @@ interface datatype {
 
 const Aboutdata: datatype[] = [
     {
-        heading: "About us.",
+        heading: "About us",
         imgSrc: "/images/aboutus/imgOne.svg",
         paragraph: 'At the IIE Cell, we bridge academia, industry, and government to nurture talent, foster innovation, and transform ideas into impactful ventures.',
-        link: 'Learn more'
+        link: '/aboutUs'
     },
     {
-        heading: "Programs.",
+        heading: "Programs",
         imgSrc: "/images/aboutus/imgTwo.svg",
         paragraph: 'Discover our comprehensive programs designed to nurture and accelerate your entrepreneurial journey from ideation to market success.',
-        link: 'Learn more'
+        link: '/programs'
     },
     {
-        heading: "Facilities.",
+        heading: "Facilities",
         imgSrc: "/images/aboutus/imgThree.svg",
         paragraph: 'Explore our advanced facilities designed to support your entrepreneurial journey and bring your innovative ideas to life.',
-        link: '/aboutUs'
+        link: '/facilities'
     },
 ]
 
