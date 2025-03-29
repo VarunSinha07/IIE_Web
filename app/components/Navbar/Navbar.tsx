@@ -6,6 +6,7 @@ import { Bars3Icon } from '@heroicons/react/24/outline';
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
 import Contactusform from './Contactus';
+import Image from 'next/image';
 
 interface NavigationItem {
     name: string;
@@ -37,19 +38,24 @@ const Navbar = () => {
                         <div className="flex flex-1 items-center sm:justify-between">
 
                             {/* LOGO */}
-                            <div>
-                                <img
+                            <Link href="/" className='text-2xl sm:text-4xl font-semibold text-black'>
+                                <Image
                                     src="/images/navbar/IIELOGO.png"
-                                    alt="Logo"
-                                className="h-8 sm:h-16"
+                                    alt="IIE Logo"
+                                    width={136} // Adjust width as needed
+                                    height={104} // Adjust height as needed
+                                    className="h-8 sm:h-16"
                                 />
+                            </Link>
+                            <div>
+                               
                             </div>
-
+{/* 
                             <div className="flex flex-shrink-0 items-center border-right">
                                 <Link href="/" className='text-2xl sm:text-4xl font-semibold text-black'>
                                     IIE 
                                 </Link>
-                            </div>
+                            </div> */}
 
                             {/* LINKS */}
 

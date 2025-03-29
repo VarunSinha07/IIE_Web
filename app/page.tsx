@@ -20,14 +20,14 @@ export default function Home() {
       <Banner />
       <Aboutus />
       <Dedicated />
-      <Digital />
+      {/* <Digital /> */}
       <Beliefs />
       <Wework />
-      <Ourteam />
+      {/* <Ourteam /> */}
       {/* <Featured /> */}
-      <Manage />
-      <FAQ />
-      <Testimonials />
+      {/* <Manage /> */}
+      {/* <FAQ /> */}
+      {/* <Testimonials /> */}
       <Articles />
       <Joinus />
       <Insta />

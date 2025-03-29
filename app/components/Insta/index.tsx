@@ -66,6 +66,7 @@ const Insta = () => {
                         </button>
                     </Link>
                 </div>
+                
 
             </div>
         </div>
