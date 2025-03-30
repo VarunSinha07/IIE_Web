@@ -9,11 +9,14 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-    { name: 'About Us', href: '/aboutus-section', current: true },
-    { name: 'Programs', href: '/services-section', current: false },
+    { name: 'About Us', href: '#aboutus-section', current: false },
+    { name: 'Programs', href: '#services-section', current: false },
     { name: 'Facilities', href: '#faq-section', current: false },
-    { name: 'Blog', href: '#blog-section', current: false },
-    { name: 'Testimonial', href: '#testimonial-section', current: false },
+    { name: 'Mentors', href: '#blog-section', current: false },
+    { name: 'IIC Events', href: '#testimonial-section', current: false },
+    { name: 'Insights', href: '#blog-section', current: false },
+    { name: 'Apply Now ', href: '/applyNow', current: false },
+    { name: 'Contact Us', href: '/contactUs', current: false },
 ]
 
 function classNames(...classes: string[]) {
@@ -40,9 +43,9 @@ const Data = () => {
                             </Link>
                         ))}
                         <div className="mt-4"></div>
-                        <button className="bg-navyblue w-full hover:text-white text-white border border-purple font-medium py-2 px-4 rounded">
+                        {/* <button className="bg-navyblue w-full hover:text-white text-white border border-purple font-medium py-2 px-4 rounded">
                             Contact Us
-                        </button>
+                        </button> */}
                         {/* <Contactusform /> */}
                     </div>
                 </div>

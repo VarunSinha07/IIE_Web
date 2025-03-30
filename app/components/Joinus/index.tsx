@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 const Join = () => {
     return (
@@ -19,9 +20,12 @@ const Join = () => {
                             <input type="email" className="my-4 py-4 sm:pl-6 lg:text-xl text-black sm:border-l border-linegrey bg-lightgrey focus:outline-none bg-emailbg focus:text-black" placeholder="Your email" autoComplete="off" />
                         </div> */}
                         <div className="sm:mr-3">
-                            <button type="submit" className="joinButton w-full sm:w-0 text-xl text-white font-semibold text-center rounded-xl sm:rounded-full bg-blue hover:bg-btnblue">
+                            <div className="my-4 py-4 sm:pl-6 lg:text-xl text-black sm:rounded-full bg-lightgrey pl-1 focus:outline-none bg-emailbg focus:text-black">
+                            <Link href="/applyNow" >
+                            <button  type="submit" className="joinButton w-full sm:w-0 text-xl text-white font-semibold text-center rounded-xl sm:rounded-full bg-blue hover:bg-btnblue">
                                 Join!
                             </button>
+                            </Link></div>
                         </div>
                     </div>
                 </div>
