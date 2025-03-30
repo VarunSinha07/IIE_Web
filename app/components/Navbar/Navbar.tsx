@@ -21,7 +21,7 @@ const navigation: NavigationItem[] = [
     { name: 'Mentors', href: '#blog-section', current: false },
     { name: 'IIC Events', href: '#testimonial-section', current: false },
     { name: 'Insights', href: '#blog-section', current: false },
-    { name: 'Apply Now ', href: '#testimonial-section', current: false },
+    { name: 'Apply Now ', href: '/applyNow', current: false },
     { name: 'Contact Us', href: '/contactUs', current: false },
 ]
 
