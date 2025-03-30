@@ -22,7 +22,7 @@ const navigation: NavigationItem[] = [
     { name: 'IIC Events', href: '#testimonial-section', current: false },
     { name: 'Insights', href: '#blog-section', current: false },
     { name: 'Apply Now ', href: '#testimonial-section', current: false },
-    { name: 'Contact Us', href: '#testimonial-section', current: false },
+    { name: 'Contact Us', href: '/contactUs', current: false },
 ]
 
 function classNames(...classes: string[]) {

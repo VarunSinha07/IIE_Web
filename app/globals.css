@@ -390,3 +390,97 @@ html {
 .manage > div:nth-child(2) h3 {
   color: #747474;
 }
+
+.apply-now-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+.page-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+}
+.card h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.card p {
+  color: #555;
+}
+.card ol {
+  padding-left: 20px;
+}
+.card li {
+  margin-bottom: 10px;
+}
+.card-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+.apply-Ibutton {
+  background-color: #008000;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.apply-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.learn-more-button {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.incubation-card h2 {
+  color: green;
+}
+.innovator-card h2 {
+  color: blue;
+}
+
+.cards-container {
+  display: flex;
+  gap: 20px; /* Add spacing between cards */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.card-buttons {
+  margin-top: auto; /* Push buttons to the bottom of the card */
+  display: flex;
+  justify-content: center; /* Center align buttons */
+  gap: 10px; /* Add spacing between buttons */
+}
