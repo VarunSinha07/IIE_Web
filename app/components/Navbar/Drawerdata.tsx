@@ -11,7 +11,7 @@ interface NavigationItem {
 const navigation: NavigationItem[] = [
     { name: 'About Us', href: '#aboutus-section', current: false },
     { name: 'Programs', href: '/programs', current: false },
-    { name: 'Facilities', href: '#faq-section', current: false },
+    { name: 'Facilities', href: '/facilities', current: false },
     { name: 'Mentors', href: '#blog-section', current: false },
     { name: 'IIC Events', href: '#testimonial-section', current: false },
     { name: 'Insights', href: '#blog-section', current: false },
