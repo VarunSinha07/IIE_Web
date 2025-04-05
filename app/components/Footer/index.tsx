@@ -13,14 +13,14 @@ const products: ProductType[] = [
   {
     id: 1,
     section: "Pages",
-    link: ["About US", "Programs", "Facilities", "Mentors"],
+    link: ["About Us", "Programs", "Facilities", "Mentors"],
     ref:["aboutUs", "programs", "facilities", "mentors"]
   },
   {
     id: 2,
     section: "Pages",
     link: ["IIC Events", "Insights", "Apply Now", "Contact Us"],
-    ref:["IICEvents", "insights", "applyNow", "contactUs"]
+    ref:["events", "insights", "applyNow", "contactUs"]
   },
 ];
 

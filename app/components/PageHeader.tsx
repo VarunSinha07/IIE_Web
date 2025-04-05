@@ -9,7 +9,7 @@ interface PageHeaderProps {
 
 const PageHeader = ({ title, subtitle, className }: PageHeaderProps) => {
   return (
-    <div style={{ backgroundColor: "#F3F4F6" }}className={cn("py-14 bg-gray-50", className)}>
+    <div style={{backgroundColor: "#F3F4F6"}} className={cn("py-14 bg-gray-50", className)}>
       <div className="container mx-auto px-4">
         <h1 className="text-4xl md:text-5xl font-bold text-center">{title}</h1>
         {subtitle && (
