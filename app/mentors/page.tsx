@@ -2,6 +2,7 @@ import React from "react";
 import { Card, CardContent } from "../components/ui/card";
 import Link from "next/link";
 import { Button } from "../components/ui/button";
+import Image from "next/image";
 
 // Placeholder data for mentor cards
 const mentorsData = [
@@ -61,10 +62,11 @@ const Mentors = () => {
             {mentorsData.map((mentor) => (
               <Card key={mentor.id} className="overflow-hidden border-none shadow-md hover:shadow-lg transition-all rounded-xl">
                 <div className="relative h-64 bg-gray-200">
-                  <img 
+                  <Image 
                     src={mentor.imagePath} 
                     alt={mentor.name} 
                     className="w-full h-full object-cover"
+                    fill
                   />
                 </div>
                 <CardContent className="p-6">
@@ -147,28 +149,30 @@ const Mentors = () => {
           </div>
           
           <blockquote className="bg-white p-8 rounded-xl shadow-md text-center">
-            <p className="text-xl mb-6 italic">
-              "The mentorship program at IIE Centre has been transformative for our students. 
+              &quot;The mentorship program at IIE Centre has been transformative for our students. 
               The guidance from industry experts has helped turn promising ideas into viable ventures, 
-              creating a lasting impact on our innovation ecosystem."
-            </p>
+              creating a lasting impact on our innovation ecosystem.&quot;
+            creating a lasting impact on our innovation ecosystem.&quot;
             <footer className="mb-6">
               <div className="flex justify-center mb-3">
                 <div className="w-16 h-16 rounded-full overflow-hidden bg-gray-300 mx-auto">
-                  <img src="/placeholder.svg" alt="Director" className="w-full h-full object-cover" />
+                  <Image src="/placeholder.svg" alt="Director" className="w-full h-full object-cover" width={64} height={64} />
+                 
                 </div>
               </div>
               <cite className="not-italic">
-                <span className="font-bold block">Dr. Robert Chen</span>
-                <span className="text-gray-600">Director, IIE Centre</span>
+                <span className="font-bold block">Akarshak Bose</span>
+                <span className="text-gray-600">Manager, IIE Centre</span>
               </cite>
             </footer>
           </blockquote>
-        </div>
+             
+            </div>
+          </div>
       </div>
 
      
-    </div>
+    
   );
 };
 

@@ -7,19 +7,19 @@ export default function Facilities() {
       title: "FAB LAB",
       description:
         "Enter a dynamic, high-tech workshop where advanced manufacturing redefines possibility. This expansive facility hums with the latest 3D printers, rapidly layering materials to produce detailed prototypes with pinpoint accuracy. Laser cutters operate with seamless precision, effortlessly shaping metal, wood, or acrylic into components that match your exact specifications.",
-      image: "/images/coworking.png",
+      image: "/placeholder.svg",
     },
     {
       title: "Mobility Centre",
       description:
         "Step into a cutting-edge testing hub dedicated to the future of transportation and mobility solutions. Here, autonomous drones glide through controlled airspace, their sensors and algorithms fine-tuned in real time. Smart transit pods move silently, showcasing the next wave of urban mobility.",
-      image: "/images/lab.png",
+      image: "/placeholder.svg",
     },
     {
       title: "Design Thinking Lab",
       description:
         "Discover a modern, light-filled workspace crafted to spark creativity. Expansive whiteboards serve as canvases for bold ideas. Teams collaborate around ergonomic tables with sticky notes, coffee, and endless curiosity.",
-      image: "/images/mentorship.png",
+      image: "/placeholder.svg",
     },
   ];
 

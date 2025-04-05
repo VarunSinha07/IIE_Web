@@ -8,21 +8,21 @@ export default function Programs() {
       tag: "(Pre-Incubation)",
       description:
         "Udayam serves as a foundational platform for nurturing early-stage concepts, delivering targeted support to refine and validate ideas. Participants engage in a structured environment where seasoned mentors provide actionable feedback, supported by essential tools like collaboration platforms and market analysis resources.",
-      image: "/images/startup.png",
+      image: "/placeholder.svg",
     },
     {
       title: "Prathisthanam",
       tag: "(Prototype and MVP)",
       description:
         "Prathisthanam provides critical support for startups transitioning from concept to tangible product. Access to advanced facilities and technical expertise enables rapid prototyping and validation. Workshops focus on user testing and refinement to create functional MVPs that meet market standards.",
-      image: "/images/innovation.png",
+      image: "/placeholder.svg",
     },
     {
       title: "Digvijyam",
       tag: "(Incubation)",
       description:
         "Digvijyam offers comprehensive incubation for growth-ready startups. Participants receive tailored mentorship, investor connections through pitch sessions, and exclusive industry partnerships. The program ensures sustainable scale and long-term business resilience.",
-      image: "/images/tech_talks.png",
+      image: "/placeholder.svg",
     },
   ];
 

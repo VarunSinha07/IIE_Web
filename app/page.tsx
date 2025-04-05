@@ -12,7 +12,7 @@ import Testimonials from './components/Testimonials/index';
 import Articles from './components/Articles/index';
 import Joinus from './components/Joinus/index';
 import Insta from './components/Insta/index';
-import { OverviewCardsGroup } from './components/overview-cards';
+import StatsCard from './components/overview-cards/index';
 
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
       <Dedicated />
       {/* <Digital /> */}
       <Beliefs />
-      <OverviewCardsGroup/>
+      <StatsCard/>
       <Wework />
       {/* <Ourteam /> */}
       {/* <Featured /> */}
