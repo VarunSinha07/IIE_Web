@@ -20,7 +20,7 @@ const navigation: NavigationItem[] = [
     { name: 'Facilities', href: '#faq-section', current: false },
     { name: 'Mentors', href: 'mentors', current: false },
     { name: 'IIC Events', href: 'events', current: false },
-    { name: 'Insights', href: '#blog-section', current: false },
+    { name: 'Insights', href: 'insights', current: false },
     { name: 'Apply Now ', href: '/applyNow', current: false },
     { name: 'Contact Us', href: '/contactUs', current: false },
 ]
