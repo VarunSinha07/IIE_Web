@@ -66,7 +66,7 @@ const Events = () => {
                 <h3 className="text-2xl font-bold mb-4">Building Real-Time Apps</h3>
                 <p className="text-gray-700 mb-4">
                   The Building Real-Time Apps workshop is a cutting-edge training program tailored to equip 
-                  students with the skills to develop dynamic, scalable applications that thrive in today's digital 
+                  students with the skills to develop dynamic, scalable applications that thrive in today&apos;s digital 
                   ecosystem. Conducted in a state-of-the-art lab setting, participants master industry-standard tools—Redis 
                   for high-speed data management, Socket.io for seamless real-time communication, and React for sleek, 
                   responsive interfaces.

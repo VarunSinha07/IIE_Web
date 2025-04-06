@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Facilities() {
   const facilities = [
@@ -55,9 +56,11 @@ export default function Facilities() {
               index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
             } items-center bg-white rounded-3xl shadow-2xl overflow-hidden transition duration-300 hover:bg-[#4add45]`}
           >
-            <img
+            <Image
               src={facility.image}
               alt={facility.title}
+              width={500}
+              height={288}
               className="w-full md:w-1/2 h-72 object-cover"
             />
             <div className="p-8 md:w-1/2 text-center md:text-left transition duration-300">

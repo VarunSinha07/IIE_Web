@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Programs() {
   const programs = [
@@ -52,11 +53,12 @@ export default function Programs() {
               hover:bg-[#FFA700]
             `}
           >
-            <img
+             <Image
               src={program.image}
               alt={program.title}
+              width={300}
+              height={176}
               className="w-full h-44 object-contain p-4 transition-all duration-200 ease-in-out group-hover:brightness-0 group-hover:invert"
-              loading="lazy"
             />
             <div className="pt-4 transition-all duration-200 ease-in-out">
               <h2 className="text-xl font-semibold text-gray-900 group-hover:text-white">
