@@ -4,8 +4,6 @@ import {
   Lightbulb,
   Building,
   Award,
-  Globe,
-  Target,
 } from "lucide-react";
 
 import PageHeader from "../components/PageHeader";
