@@ -5,7 +5,7 @@ import {
   Building,
   Award,
 } from "lucide-react";
-
+import Image from "next/image";
 import PageHeader from "../components/PageHeader";
 import { Card, CardContent } from "../components/ui/card";
 
@@ -133,14 +133,14 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className=" flex flex-col min-h-screen">
         <PageHeader
             title="About Us"
             subtitle="Learn about the Innovation, Incubation, and Entrepreneurship Cell at SRMIST Ramapuram"
             className="bg-gradient-to-r from-purple-50 via-blue-50 to-indigo-50"
         />
 
-      <main className="flex-grow">
+      <main className="flex-grow pt-24">
         {/* Hero Section with Image */}
         <section className="relative py-16 px-4">
           <div className="container mx-auto max-w-6xl">
@@ -152,7 +152,7 @@ const AboutUs = () => {
                 >
                   Who We Are
                 </h2>
-                <p className="text-gray-700 mb-4">
+                <p className="text-gray-700 mb-4 text-lg">
                   At the Innovation, Incubation, and Entrepreneurship (IIE)
                   Cell, we are a passionate, student-driven initiative committed
                   to nurturing innovative minds and entrepreneurial spirits. Our
@@ -216,162 +216,165 @@ const AboutUs = () => {
               </div>
               <div className="md:w-1/2 relative">
                 <div style={{backgroundColor: "#C2D3F6"}}className="absolute -right-4 -bottom-4 w-full h-full bg-gradient-to-tr from-blue-200 to-purple-200 rounded-xl"></div>
-                <img
+                
+                <Image
                   src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                   alt="Innovation Team Collaboration"
                   className="relative z-10 rounded-xl w-full h-auto object-cover shadow-lg"
+                  width={1170}
+                  height={780}
                 />
-              </div>
-            </div>
+                </div>
+          </div>
           </div>
         </section>
 
         {/* Our Values Section */}
-        <section className="py-16 px-4 bg-gradient-to-b from-white to-gray-50">
+        <section className="py-20 px-6 bg-gradient-to-b from-white to-gray-50">
           <div className="container mx-auto max-w-5xl">
             <h2
               style={{ color: "#1E3A8A" }}
-              className="text-3xl font-bold mb-2 text-center text-blue-900"
+              className="text-3xl font-bold mb-4 text-center text-blue-900"
             >
               Our Core Values
             </h2>
-            <p className="text-center text-gray-700 mb-12 max-w-3xl mx-auto">
+            <p className="text-center text-gray-700 mb-16 max-w-3xl mx-auto">
               The principles that guide our work and shape our community
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               <div
-                style={{
-                  padding: "1.5rem",
-                  borderRadius: "0.5rem",
-                  boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-                  border: "1px solid #BFDBFE",
-                  background:
-                    "linear-gradient(to bottom right, #EFF6FF, #FFFFFF)",
-                }}
+          style={{
+            padding: "2rem",
+            borderRadius: "0.5rem",
+            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+            border: "1px solid #BFDBFE",
+            background:
+              "linear-gradient(to bottom right, #EFF6FF, #FFFFFF)",
+          }}
               >
-                <div
-                  style={{
-                    backgroundColor: "#BFDBFE",
-                    padding: "1rem",
-                    borderRadius: "9999px",
-                    marginBottom: "1rem",
-                    width: "4rem",
-                    height: "4rem",
-                    margin: "0 auto",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  <Lightbulb
-                    style={{ height: "2rem", width: "2rem", color: "#3B82F6" }}
-                  />
-                </div>
-                <h3
-                  style={{
-                    fontSize: "1.25rem",
-                    fontWeight: "bold",
-                    marginBottom: "0.5rem",
-                    color: "#1E3A8A",
-                    textAlign: "center",
-                  }}
-                >
-                  Innovation
-                </h3>
-                <p style={{ color: "#374151", textAlign: "center" }}>
-                  Exploring new ideas and pushing boundaries to create impactful
-                  solutions.
-                </p>
+          <div
+            style={{
+              backgroundColor: "#BFDBFE",
+              padding: "1.5rem",
+              borderRadius: "9999px",
+              marginBottom: "1.5rem",
+              width: "5rem",
+              height: "5rem",
+              margin: "0 auto",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <Lightbulb
+              style={{ height: "2.5rem", width: "2.5rem", color: "#3B82F6" }}
+            />
+          </div>
+          <h3
+            style={{
+              fontSize: "1.5rem",
+              fontWeight: "bold",
+              marginBottom: "1rem",
+              color: "#1E3A8A",
+              textAlign: "center",
+            }}
+          >
+            Innovation
+          </h3>
+          <p style={{ color: "#374151", textAlign: "center" }}>
+            Exploring new ideas and pushing boundaries to create impactful
+            solutions.
+          </p>
               </div>
 
               <div
-                style={{
-                  padding: "1.5rem",
-                  borderRadius: "0.5rem",
-                  boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-                  border: "1px solid #E9D5FF",
-                  background:
-                    "linear-gradient(to bottom right, #FAF5FF, #FFFFFF)",
-                }}
+          style={{
+            padding: "2rem",
+            borderRadius: "0.5rem",
+            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+            border: "1px solid #E9D5FF",
+            background:
+              "linear-gradient(to bottom right, #FAF5FF, #FFFFFF)",
+          }}
               >
-                <div
-                  style={{
-                    backgroundColor: "#E9D5FF",
-                    padding: "1rem",
-                    borderRadius: "9999px",
-                    marginBottom: "1rem",
-                    width: "4rem",
-                    height: "4rem",
-                    margin: "0 auto",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  <Users
-                    style={{ height: "2rem", width: "2rem", color: "#7C3AED" }}
-                  />
-                </div>
-                <h3
-                  style={{
-                    fontSize: "1.25rem",
-                    fontWeight: "bold",
-                    marginBottom: "0.5rem",
-                    color: "#6B21A8",
-                    textAlign: "center",
-                  }}
-                >
-                  Collaboration
-                </h3>
-                <p style={{ color: "#374151", textAlign: "center" }}>
-                  Working together to achieve shared goals and foster a
-                  supportive community.
-                </p>
+          <div
+            style={{
+              backgroundColor: "#E9D5FF",
+              padding: "1.5rem",
+              borderRadius: "9999px",
+              marginBottom: "1.5rem",
+              width: "5rem",
+              height: "5rem",
+              margin: "0 auto",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <Users
+              style={{ height: "2.5rem", width: "2.5rem", color: "#7C3AED" }}
+            />
+          </div>
+          <h3
+            style={{
+              fontSize: "1.5rem",
+              fontWeight: "bold",
+              marginBottom: "1rem",
+              color: "#6B21A8",
+              textAlign: "center",
+            }}
+          >
+            Collaboration
+          </h3>
+          <p style={{ color: "#374151", textAlign: "center" }}>
+            Working together to achieve shared goals and foster a
+            supportive community.
+          </p>
               </div>
 
               <div
-                style={{
-                  padding: "1.5rem",
-                  borderRadius: "0.5rem",
-                  boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-                  border: "1px solid #D1FAE5",
-                  background:
-                    "linear-gradient(to bottom right, #F0FDF4, #FFFFFF)",
-                }}
+          style={{
+            padding: "2rem",
+            borderRadius: "0.5rem",
+            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+            border: "1px solid #D1FAE5",
+            background:
+              "linear-gradient(to bottom right, #F0FDF4, #FFFFFF)",
+          }}
               >
-                <div
-                  style={{
-                    backgroundColor: "#D1FAE5",
-                    padding: "1rem",
-                    borderRadius: "9999px",
-                    marginBottom: "1rem",
-                    width: "4rem",
-                    height: "4rem",
-                    margin: "0 auto",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  <Award
-                    style={{ height: "2rem", width: "2rem", color: "#10B981" }}
-                  />
-                </div>
-                <h3
-                  style={{
-                    fontSize: "1.25rem",
-                    fontWeight: "bold",
-                    marginBottom: "0.5rem",
-                    color: "#065F46",
-                    textAlign: "center",
-                  }}
-                >
-                  Excellence
-                </h3>
-                <p style={{ color: "#374151", textAlign: "center" }}>
-                  Striving for the highest quality in everything we do, from
-                  ideas to execution.
-                </p>
+          <div
+            style={{
+              backgroundColor: "#D1FAE5",
+              padding: "1.5rem",
+              borderRadius: "9999px",
+              marginBottom: "1.5rem",
+              width: "5rem",
+              height: "5rem",
+              margin: "0 auto",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <Award
+              style={{ height: "2.5rem", width: "2.5rem", color: "#10B981" }}
+            />
+          </div>
+          <h3
+            style={{
+              fontSize: "1.5rem",
+              fontWeight: "bold",
+              marginBottom: "1rem",
+              color: "#065F46",
+              textAlign: "center",
+            }}
+          >
+            Excellence
+          </h3>
+          <p style={{ color: "#374151", textAlign: "center" }}>
+            Striving for the highest quality in everything we do, from
+            ideas to execution.
+          </p>
               </div>
             </div>
           </div>
@@ -395,172 +398,177 @@ const AboutUs = () => {
               We are an integral part of an ecosystem that connects academia,
               industry, and government
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 px-4">
               {/* Academia Card */}
               <Card
+              style={{
+                background:
+                "linear-gradient(to bottom right, #f0fdf4, #d1fae5)",
+                border: "none",
+                boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+                transition: "all 0.3s",
+                padding: "1.5rem",
+              }}
+              >
+              <CardContent
                 style={{
-                  background:
-                    "linear-gradient(to bottom right, #f0fdf4, #d1fae5)",
-                  border: "none",
-                  boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-                  transition: "all 0.3s",
+                paddingTop: "1.5rem",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                textAlign: "center",
                 }}
               >
-                <CardContent
-                  style={{
-                    paddingTop: "1.5rem",
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    textAlign: "center",
-                  }}
+                <div
+                style={{
+                  background: "white",
+                  padding: "1rem",
+                  borderRadius: "9999px",
+                  marginBottom: "1rem",
+                  boxShadow: "inset 0 2px 4px rgba(0,0,0,0.05)",
+                }}
                 >
-                  <div
-                    style={{
-                      background: "white",
-                      padding: "1rem",
-                      borderRadius: "9999px",
-                      marginBottom: "1rem",
-                      boxShadow: "inset 0 2px 4px rgba(0,0,0,0.05)",
-                    }}
-                  >
-                    <Building
-                      style={{
-                        height: "2rem",
-                        width: "2rem",
-                        color: "#059669",
-                      }}
-                    />
-                  </div>
-                  <h3
-                    style={{
-                      fontSize: "1.25rem",
-                      fontWeight: "bold",
-                      marginBottom: "0.75rem",
-                      color: "#065f46",
-                    }}
-                  >
-                    Academia
-                  </h3>
-                  <p style={{ color: "#374151" }}>
-                    Connecting with educational resources and research expertise
-                    to foster innovative learning and development.
-                  </p>
-                </CardContent>
+                <Building
+                  style={{
+                  height: "2rem",
+                  width: "2rem",
+                  color: "#059669",
+                  }}
+                />
+                </div>
+                <h3
+                style={{
+                  fontSize: "1.25rem",
+                  fontWeight: "bold",
+                  marginBottom: "0.75rem",
+                  color: "#065f46",
+                }}
+                >
+                Academia
+                </h3>
+                <p style={{ color: "#374151" }}>
+                Connecting with educational resources and research expertise
+                to foster innovative learning and development.
+                </p>
+              </CardContent>
               </Card>
 
               {/* Industry Card */}
               <Card
+              style={{
+                background:
+                "linear-gradient(to bottom right, #fff7ed, #fef3c7)",
+                border: "none",
+                boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+                transition: "all 0.3s",
+                padding: "1.5rem",
+              }}
+              >
+              <CardContent
                 style={{
-                  background:
-                    "linear-gradient(to bottom right, #fff7ed, #fef3c7)",
-                  border: "none",
-                  boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-                  transition: "all 0.3s",
+                paddingTop: "1.5rem",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                textAlign: "center",
                 }}
               >
-                <CardContent
-                  style={{
-                    paddingTop: "1.5rem",
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    textAlign: "center",
-                  }}
+                <div
+                style={{
+                  background: "white",
+                  padding: "1rem",
+                  borderRadius: "9999px",
+                  marginBottom: "1rem",
+                  boxShadow: "inset 0 2px 4px rgba(0,0,0,0.05)",
+                }}
                 >
-                  <div
-                    style={{
-                      background: "white",
-                      padding: "1rem",
-                      borderRadius: "9999px",
-                      marginBottom: "1rem",
-                      boxShadow: "inset 0 2px 4px rgba(0,0,0,0.05)",
-                    }}
-                  >
-                    <Lightbulb
-                      style={{
-                        height: "2rem",
-                        width: "2rem",
-                        color: "#ea580c",
-                      }}
-                    />
-                  </div>
-                  <h3
-                    style={{
-                      fontSize: "1.25rem",
-                      fontWeight: "bold",
-                      marginBottom: "0.75rem",
-                      color: "#9a3412",
-                    }}
-                  >
-                    Industry
-                  </h3>
-                  <p style={{ color: "#374151" }}>
-                    Partnering with businesses to provide real-world insights,
-                    challenges, and opportunities for practical innovation.
-                  </p>
-                </CardContent>
+                <Lightbulb
+                  style={{
+                  height: "2rem",
+                  width: "2rem",
+                  color: "#ea580c",
+                  }}
+                />
+                </div>
+                <h3
+                style={{
+                  fontSize: "1.25rem",
+                  fontWeight: "bold",
+                  marginBottom: "0.75rem",
+                  color: "#9a3412",
+                }}
+                >
+                Industry
+                </h3>
+                <p style={{ color: "#374151" }}>
+                Partnering with businesses to provide real-world insights,
+                challenges, and opportunities for practical innovation.
+                </p>
+              </CardContent>
               </Card>
 
               {/* Government Card */}
               <Card
+              style={{
+                background:
+                "linear-gradient(to bottom right, #eff6ff, #ccfbf1)",
+                border: "none",
+                boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+                transition: "all 0.3s",
+                padding: "1.5rem",
+              }}
+              >
+              <CardContent
                 style={{
-                  background:
-                    "linear-gradient(to bottom right, #eff6ff, #ccfbf1)",
-                  border: "none",
-                  boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-                  transition: "all 0.3s",
+                paddingTop: "1.5rem",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                textAlign: "center",
                 }}
               >
-                <CardContent
-                  style={{
-                    paddingTop: "1.5rem",
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    textAlign: "center",
-                  }}
+                <div
+                style={{
+                  background: "white",
+                  padding: "1rem",
+                  borderRadius: "9999px",
+                  marginBottom: "1rem",
+                  boxShadow: "inset 0 2px 4px rgba(0,0,0,0.05)",
+                }}
                 >
-                  <div
-                    style={{
-                      background: "white",
-                      padding: "1rem",
-                      borderRadius: "9999px",
-                      marginBottom: "1rem",
-                      boxShadow: "inset 0 2px 4px rgba(0,0,0,0.05)",
-                    }}
-                  >
-                    <Users
-                      style={{
-                        height: "2rem",
-                        width: "2rem",
-                        color: "#2563eb",
-                      }}
-                    />
-                  </div>
-                  <h3
-                    style={{
-                      fontSize: "1.25rem",
-                      fontWeight: "bold",
-                      marginBottom: "0.75rem",
-                      color: "#1e40af",
-                    }}
-                  >
-                    Government
-                  </h3>
-                  <p style={{ color: "#374151" }}>
-                    Collaborating with government bodies to align with policy
-                    initiatives and access support for innovation projects.
-                  </p>
-                </CardContent>
+                <Users
+                  style={{
+                  height: "2rem",
+                  width: "2rem",
+                  color: "#2563eb",
+                  }}
+                />
+                </div>
+                <h3
+                style={{
+                  fontSize: "1.25rem",
+                  fontWeight: "bold",
+                  marginBottom: "0.75rem",
+                  color: "#1e40af",
+                }}
+                >
+                Government
+                </h3>
+                <p style={{ color: "#374151" }}>
+                Collaborating with government bodies to align with policy
+                initiatives and access support for innovation projects.
+                </p>
+              </CardContent>
               </Card>
             </div>
 
             <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-8 rounded-xl shadow-md">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                 alt="Team Collaboration"
                 className="w-full h-40 object-cover rounded-lg mb-6"
+                width={1170}
+                height={160}
               />
               <p className="text-gray-700 text-center">
                 At our core, we embrace curiosity, inclusivity, and
@@ -631,6 +639,7 @@ const AboutUs = () => {
                   gap: "1.5rem",
                 }}
               >
+                
                 {leadership.map((member, index) => (
                   <div
                     key={index}
@@ -643,7 +652,7 @@ const AboutUs = () => {
                     }}
                   >
                     {/* Image */}
-                    <img
+                    {/* <img
                       src={member.imageUrl}
                       alt={member.name}
                       style={{
@@ -654,7 +663,24 @@ const AboutUs = () => {
                         margin: "0 auto 1rem",
                         border: "3px solid #e0e7ff",
                       }}
+                    /> */}
+
+                    <Image
+                      src={member.imageUrl}
+                      alt={member.name}
+                      width={100}
+                      height={100}
+                      style={{
+                        width: "100px",
+                        height: "100px",
+                        borderRadius: "50%",
+                        objectFit: "cover",
+                        margin: "0 auto 1rem",
+                        border: "3px solid #e0e7ff",
+                      }}
                     />
+
+                    
                     {/* Name */}
                     <h4
                       style={{
@@ -687,24 +713,6 @@ const AboutUs = () => {
                 ))}
               </div>
             </div>
-
-            {/* <div>
-              <h3 className="text-2xl font-bold mb-6 text-blue-800 flex items-center">
-                <div className="h-1 flex-grow bg-gradient-to-r from-blue-500 to-transparent mr-4"></div>
-                Core Team
-                <div className="h-1 flex-grow bg-gradient-to-l from-blue-500 to-transparent ml-4"></div>
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {coreTeam.map((member, index) => (
-                  <TeamMember
-                    key={index}
-                    name={member.name}
-                    position={member.position}
-                    description={member.description}
-                  />
-                ))}
-              </div>
-            </div> */}
 
             <div style={{ marginBottom: "3rem" }}>
               {/* Heading */}

@@ -98,8 +98,8 @@ const Insights = () => {
                   Student Innovation Challenge
                 </h3>
                 <p className="text-gray-700">
-                  Check out the winning projects from this year's student
-                  innovation challenge and how they're being developed further
+                  Check out the winning projects from this year&apos;s student
+                  innovation challenge and how they&apos;re being developed further
                   at IIE.
                 </p>
               </CardContent>

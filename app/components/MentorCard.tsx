@@ -1,5 +1,6 @@
 import { Card } from "../components/ui/card";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 interface MentorProps {
   mentor: {
@@ -14,16 +15,22 @@ interface MentorProps {
 
 const MentorCard = ({ mentor }: MentorProps) => {
   return (
-    <Card className={cn("overflow-hidden border-none shadow-lg transition-transform duration-300 hover:-translate-y-1", mentor.background)}>
+    <Card
+      className={cn(
+        "overflow-hidden border-none shadow-lg transition-transform duration-300 hover:-translate-y-1",
+        mentor.background
+      )}
+    >
       <div className="p-6">
         <div className="w-32 h-32 mx-auto rounded-full overflow-hidden mb-6 border-4 border-white shadow-md">
-          <img
+          <Image
             src={mentor.image}
             alt={mentor.name}
             className="w-full h-full object-cover"
-            onError={(e) => {
-              const target = e.target as HTMLImageElement;
-              target.src = "/placeholder.svg";
+            width={128}
+            height={128}
+            onError={() => {
+              // Handle error gracefully
             }}
           />
         </div>
