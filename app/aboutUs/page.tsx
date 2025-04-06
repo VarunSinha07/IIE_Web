@@ -593,7 +593,7 @@ const AboutUs = () => {
             <p className="text-center text-gray-700 mb-12 max-w-3xl mx-auto">
               Our leadership team comprises visionaries and experienced
               professionals dedicated to nurturing talent and fostering
-              innovation. Meet the team that drives IIE's mission forward.
+              innovation. Meet the team that drives IIE&apos;s mission forward.
             </p>
             {/* Leadership Grid */}
 
