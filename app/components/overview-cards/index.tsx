@@ -1,103 +1,92 @@
-"use client";
+import React from "react";
+import {
+  CircleDollarSign,
+  Users,
+  CalendarDays,
+  SquareStack,
+  Briefcase,
+  Rocket,
+} from "lucide-react";
+import StatsCard from "./card";
 
-import { useEffect, useState } from "react";
-import { compactFormat } from "../../../lib/format-number";
-import { getOverviewData } from "./fetch";
-import { OverviewCard } from "./card";
-import * as icons from "./icons";
-
-export function OverviewCardsGroup() {
-  const [data, setData] = useState<{
-    fundsStartup: any;
-    corpousFund: any;
-    incubationProjects: any;
-    eventOrg: any;
-    incubatedStartup: any;
-    technologyTransfer: any;
-  } | null>(null);
-
-  useEffect(() => {
-    async function fetchData() {
-      const overviewData = await getOverviewData();
-      setData(overviewData);
-    }
-    fetchData();
-  }, []);
-
-  if (!data) {
-    return <div>Loading...</div>; // Add a loading state
-  }
-
-  const { fundsStartup, corpousFund, incubationProjects, eventOrg,incubatedStartup,technologyTransfer } = data;
-
+const StatsSection: React.FC = () => {
   return (
-    <>
-      <div className="mx-auto max-w-2xl lg:max-w-7xl sm:py-4 lg:px-8 ">
-        <div className="text-center">
-          <h3 className="text-4xl sm:text-6xl font-bold text-black my-2">
+    <section className="py-16 px-4 bg-gradient-to-br from-blue-50 to-purple-50">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-12">
+          <h2
+            style={{
+              fontWeight: "bold",
+              marginBottom: "1rem",
+
+              WebkitBackgroundClip: "text",
+              color: "black",
+            }}
+            className="text-4xl sm:text-6xl font-bold"
+          >
             Our Stats Overview.
-          </h3>
-          {/* <h3 className="text-4xl sm:text-6xl font-bold text-black opacity-50 lg:mr-48 my-2">We work in several verticals.</h3>
-                        <h3 className="text-4xl sm:text-6xl font-bold text-black opacity-25 lg:-mr-32 my-2">We work in several verticals.</h3> */}
+          </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto"></div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            <StatsCard
+              icon={<CircleDollarSign size={32} />}
+              value="₹250K"
+              label="Funds raised by our startups"
+              color="#1FC281"
+            />
+          </div>
+
+          <div className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <StatsCard
+              icon={<Briefcase size={32} />}
+              value="₹15M"
+              label="Corpus Fund"
+              color="#F69B15"
+            />
+          </div>
+
+          <div className="animate-fade-in" style={{ animationDelay: "0.3s" }}>
+            <StatsCard
+              icon={<SquareStack size={32} />}
+              value="130"
+              label="Pre-Incubation Projects"
+              color="#9449F3"
+            />
+          </div>
+
+          <div className="animate-fade-in" style={{ animationDelay: "0.4s" }}>
+            <StatsCard
+              icon={<CalendarDays size={32} />}
+              value="250"
+              label="Events Organized"
+              color="#40ABEC"
+            />
+          </div>
+
+          <div className="animate-fade-in" style={{ animationDelay: "0.5s" }}>
+            <StatsCard
+              icon={<Rocket size={32} />}
+              value="46"
+              label="Incubated Startups"
+              color="#9239EC"
+            />
+          </div>
+
+          <div className="animate-fade-in" style={{ animationDelay: "0.6s" }}>
+            <StatsCard
+              icon={<Users size={32} />}
+              value="2"
+              label="Technology Transfers"
+              color="#3B91F7"
+            />
+          </div>
         </div>
       </div>
-      <div className="grid gap-4 sm:grid-cols-2 sm:gap-6 xl:grid-cols-3 2xl:grid-cols-3 2xl:gap-7.5">
-        <OverviewCard
-          label="Funds raised by our startups"
-          data={{
-            ...fundsStartup,
-            value: "₹" + compactFormat(fundsStartup.value),
-          }}
-          Icon={icons.Views}
-        />
-
-        <OverviewCard
-          label="Corpus Fund"
-          data={{
-            ...corpousFund,
-            value: "₹" + compactFormat(corpousFund.value),
-          }}
-          Icon={icons.Profit}
-        />
-
-        <OverviewCard
-          label="Pre-Incubation Projects"
-          data={{
-            ...incubationProjects,
-            value: compactFormat(incubationProjects.value),
-          }}
-          Icon={icons.Product}
-        />
-
-        <OverviewCard
-          label="Events Organized"
-          data={{
-            ...eventOrg,
-            value: compactFormat(eventOrg.value),
-          }}
-          Icon={icons.Users}
-        />
-
-        <OverviewCard
-          label="Incubated Startups"
-          data={{
-            ...incubatedStartup,
-            value: compactFormat(incubatedStartup.value),
-          }}
-          Icon={icons.Product}
-        />
-
-        <OverviewCard
-          label="Technology Transfers"
-          data={{
-            ...technologyTransfer,
-            value: compactFormat(technologyTransfer.value),
-          }}
-          Icon={icons.Users}
-        />
-      </div>
-    </>
+    </section>
   );
-}
+};
 
-export default OverviewCardsGroup;
+export default StatsSection;

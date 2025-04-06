@@ -12,15 +12,15 @@ interface ProductType {
 const products: ProductType[] = [
   {
     id: 1,
-    section: "Pages",
+    section: "Information",
     link: ["About Us", "Programs", "Facilities", "Mentors"],
-    ref:["aboutUs", "programs", "facilities", "mentors"]
+    ref: ["aboutUs", "programs", "facilities", "mentors"],
   },
   {
     id: 2,
-    section: "Pages",
+    section: "Helpful Links",
     link: ["IIC Events", "Insights", "Apply Now", "Contact Us"],
-    ref:["events", "insights", "applyNow", "contactUs"]
+    ref: ["events", "insights", "applyNow", "contactUs"],
   },
 ];
 
@@ -127,32 +127,30 @@ const Footer = () => {
       </div>
 
       {/* All Rights Reserved */}
-    <div className="mx-auto max-w-2xl lg:max-w-7xl">
-      <div className="pt-5 pb-5 px-4 sm:px-6 lg:px-4 border-solid border-t border-white">
-        <div className="mt-4 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 xl:gap-x-8">
-        <div className="flex justify-center md:justify-start">
-          <h3 className="text-center md:text-start text-white text-lg">
-            @2025 - All Rights Reserved by IIE Centre
-          </h3>
+      <div className="mx-auto max-w-2xl lg:max-w-7xl">
+        <div className="pt-5 pb-5 px-4 sm:px-6 lg:px-4 border-solid border-t border-white">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+        <h3 className="text-center md:text-start text-white text-lg">
+          @2025 - All Rights Reserved by IIE Centre
+        </h3>
+        <div className="text-white mt-4 md:mt-0">
+          Made with ❤️ by IIE Centre
         </div>
-        <div className="flex justify-center md:justify-end">
+        <div className="flex mt-4 md:mt-0">
           <Link href="/">
             <h3 className="text-white pr-6 hover:text-white">
-            Privacy policy
+          Privacy policy
             </h3>
           </Link>
           <Link href="/">
             <h3 className="text-white pl-6 border-solid border-l border-gray-800 hover:text-white">
-            Terms & conditions
+          Terms & conditions
             </h3>
           </Link>
         </div>
+          </div>
         </div>
       </div>
-      <div className="text-center mt-4 text-white">
-        Made with ❤️ by IIE TEAM
-      </div>
-    </div>
     </div>
   );
 };

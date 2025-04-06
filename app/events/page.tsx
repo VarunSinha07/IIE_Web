@@ -13,7 +13,7 @@ const Events = () => {
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-6">IIC Events</h1>
           <p className="text-gray-700 max-w-3xl mx-auto text-center">
-            The Institution's Innovation Council (IIC) at the IIE Centre is a dynamic hub dedicated to fostering 
+            The Institution&apos;s Innovation Council (IIC) at the IIE Centre is a dynamic hub dedicated to fostering 
             an entrepreneurial mindset, sharpening technical expertise, and expanding professional networks among students.
           </p>
         </div>
