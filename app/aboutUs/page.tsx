@@ -652,18 +652,7 @@ const AboutUs = () => {
                     }}
                   >
                     {/* Image */}
-                    {/* <img
-                      src={member.imageUrl}
-                      alt={member.name}
-                      style={{
-                        width: "100px",
-                        height: "100px",
-                        borderRadius: "50%",
-                        objectFit: "cover",
-                        margin: "0 auto 1rem",
-                        border: "3px solid #e0e7ff",
-                      }}
-                    /> */}
+                    
 
                     <Image
                       src={member.imageUrl}

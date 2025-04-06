@@ -63,17 +63,7 @@ const ApplyNow = () => {
 
       <section className="py-16 px-4" id="application-process">
         <div className="container mx-auto max-w-6xl">
-          {/* <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Two Ways to Apply
-            </h2>
-            <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-              Choose the path that aligns with your goals - apply as an
-              incubatee to launch your startup or as an innovator to showcase
-              your ideas.
-            </p>
-          </div> */}
-
+          
           <Tabs
             defaultValue="incubation"
             className="max-w-4xl mx-auto"
@@ -82,27 +72,35 @@ const ApplyNow = () => {
             
           >
             <div className="flex justify-center mb-8">
-              <TabsList
-              style={{ backgroundColor: "#F3F4F6" }}
-              className="grid w-full max-w-md grid-cols-2 rounded-lg"
-              >
-              <TabsTrigger
-                value="incubation"
-                className={`${
-                activeTab === "incubation" ? "bg-white" : "bg-transparent"
-                } rounded-l-lg`}
-              >
-                Incubation
-              </TabsTrigger>
-              <TabsTrigger
-                value="innovator"
-                className={`${
-                activeTab === "innovator" ? "bg-white" : "bg-transparent"
-                } rounded-r-lg`}
-              >
-                Innovator
-              </TabsTrigger>
-              </TabsList>
+                <TabsList
+                style={{
+                  backgroundColor: "#F3F4F6",
+                  display: "grid",
+                  width: "100%",
+                  maxWidth: "50rem",
+                  gridTemplateColumns: "repeat(2, 1fr)",
+                  borderRadius: "0.5rem",
+                }}
+                >
+                <TabsTrigger
+                  value="incubation"
+                  style={{
+                  backgroundColor: activeTab === "incubation" ? "#16A34A" : "#FFFFFF",
+                  borderRadius: "0.5rem 0 0 0.5rem",
+                  }}
+                >
+                  Incubation
+                </TabsTrigger>
+                <TabsTrigger
+                  value="innovator"
+                  style={{
+                  backgroundColor: activeTab === "innovator" ? "#3B82F6" : "#FFFFFF",
+                  borderRadius: "0 0.5rem 0.5rem 0",
+                  }}
+                >
+                  Innovator
+                </TabsTrigger>
+                </TabsList>
             </div>
             <TabsContent value="incubation" id="incubation">
               <div className="bg-white rounded-xl p-8 shadow-md">
@@ -111,26 +109,28 @@ const ApplyNow = () => {
                     <h3 style={{ color: "#16A34A" }}className="text-2xl font-bold text-blue-600">
                       Apply for Incubation
                     </h3>
-                    <p className="text-gray-600 mt-2 md:max-w-2xl">
+                    <p className="text-gray-600 mt-2 ">
                       Kickstart your entrepreneurial journey with IIE Centre.
                       Gain access to expert mentorship, cutting-edge resources,
                       and a structured ecosystem designed to transform your
                       innovative ideas into thriving startups.
                     </p>
                   </div>
-                  <Button
-                    style={{ backgroundColor: "#16A34A" }}className="bg-blue-600 hover:bg-blue-700 mt-4 md:mt-0 px-6 py-5 h-auto text-white"
-                    asChild
-                  >
-                    <Link href="#apply-incubation">Apply as Incubater</Link>
-                  </Button>
+                 
                 </div>
                 <ApplicationProcess
                   title="Steps to Apply for Incubation"
                   steps={incubationSteps}
                   accentColor="#16A34A"
                 />
-              </div>
+              
+              <Button
+                    style={{ backgroundColor: "#16A34A" }}className="bg-blue-600 hover:bg-blue-700 mt-4 md:mt-0 px-6 py-5 h-auto text-white"
+                    asChild
+                  >
+                    <Link href="#apply-incubation">Apply as Incubater</Link>
+                  </Button>
+                  </div>
             </TabsContent>
 
             <TabsContent value="innovator" id="innovator">
@@ -140,25 +140,26 @@ const ApplyNow = () => {
                     <h3  style={{ color: "#3B82F6" }}className="text-2xl font-bold text-purple-600">
                       Apply for Innovator
                     </h3>
-                    <p className="text-gray-600 mt-2 md:max-w-2xl">
+                    <p className="text-gray-600 mt-2 ">
                       Join a community of thinkers and creators. Leverage our
                       platform to showcase your ideas, collaborate with
                       like-minded individuals, and contribute to groundbreaking
                       projects.
                     </p>
                   </div>
-                  <Button
-                     style={{ backgroundColor: "#3B82F6" }}className="bg-purple-600 hover:bg-purple-700 mt-4 md:mt-0 px-6 py-5 h-auto text-white"
-                    asChild
-                  >
-                    <Link href="#apply-innovator">Apply as Innovator</Link>
-                  </Button>
+                  
                 </div>
                 <ApplicationProcess
                   title="Steps to Apply for Innovator"
                   steps={innovatorSteps}
                   accentColor="#3B82F6"
                 />
+                <Button
+                     style={{ backgroundColor: "#3B82F6" }}className="bg-purple-600 hover:bg-purple-700 mt-4 md:mt-0 px-6 py-5 h-auto text-white"
+                    asChild
+                  >
+                    <Link href="#apply-innovator">Apply as Innovator</Link>
+                  </Button>
               </div>
             </TabsContent>
           </Tabs>
